@@ -8,11 +8,11 @@ const AddEmployee = () => {
   const empref = collection(db, "employee");
 
   const addrecord = async () => {
-    if (name != "" && role != "") {
+    if (name !== "" && role !== "") {
       await addDoc(empref, { name: name, role: role });
     } else {
       alert("Enter the details properly");
-    }``
+    }
   };
   return (
     <div>

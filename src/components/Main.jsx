@@ -20,7 +20,7 @@ const Main = () => {
         </div>
       </section>
       <section>
-        <div className="grid grid-cols-12 ">
+        <div className="flex ">
           <div
             className={` bg-cream h-screen pl-2 ${
               !open && "hidden"

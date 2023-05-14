@@ -29,31 +29,30 @@ const Employee = () => {
   };
   return (
     <div>
-      <button
-      className="bg-green p-2 m-3 rounded"
-        onClick={toggleComponent}
-      >
+      <button className="bg-green p-2 m-3 rounded" onClick={toggleComponent}>
         {showComponent ? "cancel" : "Add Employee"}
       </button>
       {showComponent && <AddEmployee />}
-      <table>
-        <thead className="bg-orange border">
-          <tr>
-            <th className="border">sno</th>
-            <th className="border">Name</th>
-            <th className="border">Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Employeelist.map((employee, index) => (
-            <tr key={employee.id}>
-              <td className="border p-2">{index + 1}</td>
-              <td className="border p-2">{employee.name}</td>
-              <td className="border p-2">{employee.role}</td>
+      <div className="overflow-x">
+        <table className="table-auto overflow-scroll">
+          <thead className="bg-orange border">
+            <tr>
+              <th className="border">sno</th>
+              <th className="border">Name</th>
+              <th className="border">Role</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {Employeelist.map((employee, index) => (
+              <tr key={employee.id}>
+                <td className="border p-2">{index + 1}</td>
+                <td className="border p-2">{employee.name}</td>
+                <td className="border p-2">{employee.role}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

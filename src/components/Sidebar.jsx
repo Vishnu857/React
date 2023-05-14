@@ -11,10 +11,8 @@ const Sidebar = () => {
               <div key={index}>
                 <NavLink
                   to={item.path}
-                  className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
-                  ${
-                    index === 0 && "bg-light-white"
-                  } `}
+                  className={`flex  rounded-md s p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+                  ${index === 0 && "bg-light-white"} `}
                 >
                   <span>{item.title}</span>
                 </NavLink>

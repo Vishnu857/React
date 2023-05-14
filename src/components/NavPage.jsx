@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Trip from "./pages/trip";
 import Employee from "./pages/employee";
 import Driver from "./pages/driver";
-import Login from "./pages/login";
 const NavPage = () => {
   return (
     <React.Fragment>
@@ -13,7 +12,7 @@ const NavPage = () => {
           <Route path="/" element={<Home />} />
           <Route path="/employee" element={<Employee />} />
           <Route path="/trip" element={<Trip />} />
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/driver" element={<Driver />} />
         </Routes>
       </section>

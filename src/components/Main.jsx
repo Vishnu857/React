@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import NavPage from "./NavPage";
-import menu from "./Assets/menu.png"
+import menu from "./Assets/menu.png";
 const Main = () => {
   const [open, setopen] = useState(true);
   return (
@@ -22,7 +22,7 @@ const Main = () => {
       <section>
         <div className="flex ">
           <div
-            className={` bg-cream h-screen pl-2 ${
+            className={` bg-cream h-screen pl-2 overflow-scroll ${
               !open && "hidden"
             } origin-left duration-100`}
           >
